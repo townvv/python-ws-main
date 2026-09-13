@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>守护自然·保护野生动物</title>
+    <!-- 引入 Tailwind CSS 进行现代化美观布局 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap');
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1534567153574-2b12153a87f0?q=80&w=1920&auto=format&fit=crop') no-repeat center center/cover;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- 导航栏 -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <i class="fa-solid fa-shield-cat text-emerald-600 text-3xl"></i>
+                <span class="font-black text-2xl text-gray-900 tracking-wider">野境守护</span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-600">
+                <a href="#about" class="hover:text-emerald-600 transition">关于我们</a>
+                <a href="#species" class="hover:text-emerald-600 transition">珍稀生灵</a>
+                <a href="#threats" class="hover:text-emerald-600 transition">面临危机</a>
+                <a href="#action" class="hover:text-emerald-600 transition">行动参与</a>
+            </nav>
+            <div>
+                <a href="#action" class="bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-5 py-2.5 rounded-full shadow-lg transition transform hover:-translate-y-0.5">
+                    立即支持
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 头部横幅 (Hero Section) -->
+    <section class="hero-bg h-screen flex items-center justify-center text-center px-4 pt-20">
+        <div class="max-w-4xl mx-auto text-white">
+            <span class="bg-emerald-500/30 border border-emerald-400/50 text-emerald-200 text-xs sm:text-sm uppercase tracking-widest px-4 py-1.5 rounded-full inline-block mb-6 backdrop-blur-sm">
+                保护生物多样性 · 守护地球家园
+            </span>
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight mb-6 leading-tight">
+                给野生动物留一片<br><span class="text-emerald-400">自由繁衍的天地</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-200 max-w-2xl mx-auto mb-10 font-light">
+                没有买卖，就没有杀戮。每一只老虎、每一头狮子、每一片森林，都是地球生命乐章中不可或缺的音符。
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#species" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-8 py-4 rounded-xl shadow-xl transition text-lg">
+                    探索珍稀生灵
+                </a>
+                <a href="#threats" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold px-8 py-4 rounded-xl backdrop-blur-sm transition text-lg">
+                    了解生存现状
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 珍稀生灵展示区 (Species Section) -->
+    <section id="species" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-xs font-bold text-emerald-600 uppercase tracking-widest mb-3">GALLERY OF WILDLIFE</h2>
+            <p class="text-3xl sm:text-4xl font-black text-gray-900 mb-4">凝视它们的眼睛，倾听大自然的呼唤</p>
+            <div class="w-20 h-1.5 bg-emerald-500 mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- 卡片 1: 老虎 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition duration-300 group">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?q=80&w=800&auto=format&fit=crop" alt="孟加拉虎" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">濒危物种</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">东北虎 / 孟加拉虎</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        森林之王。由于栖息地破碎化和非法盗猎，野生虎的数量在过去一个世纪里急剧下降，保护它们就是保护森林生态的完整性。
+                    </p>
+                    <div class="flex items-center text-emerald-600 text-sm font-semibold">
+                        <span>了解保护进展</span>
+                        <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 卡片 2: 狮子 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition duration-300 group">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?q=80&w=800&auto=format&fit=crop" alt="非洲狮" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute top-4 left-4 bg-amber-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">易危物种</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">非洲狮</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        草原霸主。随着人类活动范围的扩张与人兽冲突的加剧，狮子的栖息地正面临空前挤压，亟需科学的野生动物廊道保护。
+                    </p>
+                    <div class="flex items-center text-emerald-600 text-sm font-semibold">
+                        <span>了解保护进展</span>
+                        <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 卡片 3: 大熊猫 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition duration-300 group">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?q=80&w=800&auto=format&fit=crop" alt="大熊猫" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute top-4 left-4 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">生态旗舰种</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">大熊猫</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        中国生态保护的象征与骄傲。通过几代人的努力，其野外种群状况有所改善，但生物多样性保护之路依然任重道远。
+                    </p>
+                    <div class="flex items-center text-emerald-600 text-sm font-semibold">
+                        <span>了解保护进展</span>
+                        <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 面临危机 (Threats Section) -->
+    <section id="threats" class="py-24 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3">CRITICAL CRISIS</h2>
+                <p class="text-3xl sm:text-4xl font-black mb-4">它们正在面对的生存危机</p>
+                <div class="w-20 h-1.5 bg-emerald-500 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-800/60 border border-gray-700/50 p-8 rounded-2xl backdrop-blur-sm">
+                    <div class="w-14 h-14 bg-emerald-500/10 text-emerald-400 rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-tree"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">栖息地丧失</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        森林砍伐、矿产开采及城市化进程无情地侵蚀着野生动物的自然家园，导致物种碎片化和基因隔离。
+                    </p>
+                </div>
+
+                <div class="bg-gray-800/60 border border-gray-700/50 p-8 rounded-2xl backdrop-blur-sm">
+                    <div class="w-14 h-14 bg-emerald-500/10 text-emerald-400 rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-skull-crossbones"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">非法盗猎与贸易</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        为了获取皮毛、骨骼、象牙等制品，无休止的非法偷猎将许多珍稀动物推向了灭绝的边缘。
+                    </p>
+                </div>
+
+                <div class="bg-gray-800/60 border border-gray-700/50 p-8 rounded-2xl backdrop-blur-sm">
+                    <div class="w-14 h-14 bg-emerald-500/10 text-emerald-400 rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">气候变迁冲击</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        全球变暖带来的极端天气、水源枯竭和食物链紊乱，让原本就脆弱的野生动物种群雪上加霜。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 行动号召 (Action / Support Section) -->
+    <section id="action" class="py-24 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-emerald-700 rounded-3xl p-8 sm:p-14 text-white text-center shadow-2xl relative overflow-hidden">
+            <div class="absolute -right-10 -bottom-10 opacity-10 text-9xl">
+                <i class="fa-solid fa-paw"></i>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-black mb-4">加入我们，成为自然守护者</h2>
+            <p class="text-emerald-100 max-w-xl mx-auto mb-8 text-sm sm:text-base">
+                拒绝购买野生动物制品，支持栖息地保护项目，用您的微小力量汇聚成改变地球未来的滔滔江海。
+            </p>
+            <form class="max-w-md mx-auto flex flex-col sm:flex-row gap-3">
+                <input type="email" placeholder="输入您的电子邮箱加入倡议" class="flex-grow px-5 py-3.5 rounded-xl text-gray-900 focus:outline-none focus:ring-2 focus:ring-emerald-400 text-sm" required>
+                <button type="submit" class="bg-gray-900 hover:bg-black text-white font-bold px-8 py-3.5 rounded-xl shadow-lg transition">
+                    签署倡议
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-950 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center space-x-3">
+                <i class="fa-solid fa-shield-cat text-emerald-500 text-2xl"></i>
+                <span class="font-bold text-white text-lg tracking-wider">野境守护 WildShield</span>
+            </div>
+            <p class="text-xs text-gray-500 text-center md:text-left">
+                &copy; 2026 野生动物保护公益倡议网页. All rights reserved. 守护自然，从我做起。
+            </p>
+            <div class="flex space-x-5 text-lg">
+                <a href="#" class="hover:text-emerald-400 transition"><i class="fa-brands fa-weixin"></i></a>
+                <a href="#" class="hover:text-emerald-400 transition"><i class="fa-brands fa-weibo"></i></a>
+                <a href="#" class="hover:text-emerald-400 transition"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
